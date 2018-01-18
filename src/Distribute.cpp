@@ -11,29 +11,34 @@ struct Distribute : Module {
 		DIST3_IN,
 		DIST4_IN,
 		DIST5_IN,
+		DIST6_IN,
+		DIST7_IN,
+		DIST8_IN,
+		DIST9_IN,
+		DIST10_IN,
 		NUM_INPUTS
 	};
 	enum OutputIds {
 		DIST1_OUT1,
 		DIST1_OUT2,
-		DIST1_OUT3,
-		DIST1_OUT4,
 		DIST2_OUT1,
 		DIST2_OUT2,
-		DIST2_OUT3,
-		DIST2_OUT4,
 		DIST3_OUT1,
 		DIST3_OUT2,
-		DIST3_OUT3,
-		DIST3_OUT4,
 		DIST4_OUT1,
 		DIST4_OUT2,
-		DIST4_OUT3,
-		DIST4_OUT4,
 		DIST5_OUT1,
 		DIST5_OUT2,
-		DIST5_OUT3,
-		DIST5_OUT4,
+		DIST6_OUT1,
+		DIST6_OUT2,
+		DIST7_OUT1,
+		DIST7_OUT2,
+		DIST8_OUT1,
+		DIST8_OUT2,
+		DIST9_OUT1,
+		DIST9_OUT2,
+		DIST10_OUT1,
+		DIST10_OUT2,
 		NUM_OUTPUTS
 	};
 
@@ -48,27 +53,32 @@ void Distribute::step() {
 	const float in3 = inputs[DIST3_IN].value;
 	const float in4 = inputs[DIST4_IN].value;
 	const float in5 = inputs[DIST5_IN].value;
+	const float in6 = inputs[DIST6_IN].value;
+	const float in7 = inputs[DIST7_IN].value;
+	const float in8 = inputs[DIST8_IN].value;
+	const float in9 = inputs[DIST9_IN].value;
+	const float in10 = inputs[DIST10_IN].value;
 
 	outputs[DIST1_OUT1].value = in1;
 	outputs[DIST1_OUT2].value = in1;
-	outputs[DIST1_OUT3].value = in1;
-	outputs[DIST1_OUT4].value = in1;
 	outputs[DIST2_OUT1].value = in2;
 	outputs[DIST2_OUT2].value = in2;
-	outputs[DIST2_OUT3].value = in2;
-	outputs[DIST2_OUT4].value = in2;
 	outputs[DIST3_OUT1].value = in3;
 	outputs[DIST3_OUT2].value = in3;
-	outputs[DIST3_OUT3].value = in3;
-	outputs[DIST3_OUT4].value = in3;
 	outputs[DIST4_OUT1].value = in4;
 	outputs[DIST4_OUT2].value = in4;
-	outputs[DIST4_OUT3].value = in4;
-	outputs[DIST4_OUT4].value = in4;
 	outputs[DIST5_OUT1].value = in5;
 	outputs[DIST5_OUT2].value = in5;
-	outputs[DIST5_OUT3].value = in5;
-	outputs[DIST5_OUT4].value = in5;
+	outputs[DIST6_OUT1].value = in6;
+	outputs[DIST6_OUT2].value = in6;
+	outputs[DIST7_OUT1].value = in7;
+	outputs[DIST7_OUT2].value = in7;
+	outputs[DIST8_OUT1].value = in8;
+	outputs[DIST8_OUT2].value = in8;
+	outputs[DIST9_OUT1].value = in9;
+	outputs[DIST9_OUT2].value = in9;
+	outputs[DIST10_OUT1].value = in10;
+	outputs[DIST10_OUT2].value = in10;
 }
 
 
